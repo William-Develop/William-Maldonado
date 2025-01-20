@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -50,20 +51,33 @@
             <!-- Header ends-->
 
             <!--Contact me form -->
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn btn-primary">Send</button>
+            </form>
             <!--Contact me form ends-->
 
+            <!--Javascript to handle the form-->
+            <script>
+                document.getElementById("contactForm").addEventListener("submit",function(event) {
+                    event.preventDefault();
+                    const email = document.getElementById("exampleFormControlInput1").value;
+                    const message = document.getElementById("exampleFormControlTextarea1").value;
+                    const mailtoLink = `mailto:william-maldonado@outlook.com?subject=Contact%20Form&body=Email:%20${email}%0D%0AMessage:%20${message}`;
+                    window.location.href = mailtoLink;
+                });
+            </script>
+            <!--Javascript to handle the form ends-->
 
 
-            
-            
+
             <!-- Footer -->
             <div class="container">
                 <footer class="py-1 my-4">
