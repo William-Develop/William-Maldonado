@@ -1,0 +1,57 @@
+body
+{
+    background-color: rgb(233, 249, 255);
+}
+
+.c-item {
+    height: 700px;
+    filter: brightness(0.9);
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Add the new styles for the form elements */
+form {
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* max width of the form*/
+}
+
+form form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+form form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center the container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(233, 249, 255);
+}
