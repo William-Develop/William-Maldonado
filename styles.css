@@ -23,12 +23,12 @@ form {
     max-width: 600px; /* max width of the form*/
 }
 
-form form-label {
+form .form-label {
     font-weight: bold;
     color: #495057;
 }
 
-form form-control {
+form .form-control {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ced4da;
